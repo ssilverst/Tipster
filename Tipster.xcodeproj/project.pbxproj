@@ -15,6 +15,9 @@
 		A56603E122C2C56800B72A5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A56603E022C2C56800B72A5C /* main.m */; };
 		A56603EB22C2C56800B72A5C /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A56603EA22C2C56800B72A5C /* TipsterTests.m */; };
 		A56603F622C2C56800B72A5C /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A56603F522C2C56800B72A5C /* TipsterUITests.m */; };
+		A566040522C2D59B00B72A5C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A566040422C2D59B00B72A5C /* SettingsViewController.m */; };
+		A566040B22C2E58B00B72A5C /* tipster.png in Resources */ = {isa = PBXBuildFile; fileRef = A566040A22C2E58B00B72A5C /* tipster.png */; };
+		A566040D22C2E7BD00B72A5C /* moneysign.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A566040C22C2E7BD00B72A5C /* moneysign.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		A56603F122C2C56800B72A5C /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56603F522C2C56800B72A5C /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		A56603F722C2C56800B72A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A566040322C2D59B00B72A5C /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A566040422C2D59B00B72A5C /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A566040A22C2E58B00B72A5C /* tipster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tipster.png; path = ../../tipster.png; sourceTree = "<group>"; };
+		A566040C22C2E7BD00B72A5C /* moneysign.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = moneysign.jpg; path = ../../../Downloads/moneysign.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,8 @@
 		A56603C522C2C56700B72A5C = {
 			isa = PBXGroup;
 			children = (
+				A566040322C2D59B00B72A5C /* SettingsViewController.h */,
+				A566040422C2D59B00B72A5C /* SettingsViewController.m */,
 				A56603D022C2C56700B72A5C /* Tipster */,
 				A56603E922C2C56800B72A5C /* TipsterTests */,
 				A56603F422C2C56800B72A5C /* TipsterUITests */,
@@ -128,6 +137,8 @@
 			children = (
 				A56603F522C2C56800B72A5C /* TipsterUITests.m */,
 				A56603F722C2C56800B72A5C /* Info.plist */,
+				A566040C22C2E7BD00B72A5C /* moneysign.jpg */,
+				A566040A22C2E58B00B72A5C /* tipster.png */,
 			);
 			path = TipsterUITests;
 			sourceTree = "<group>";
@@ -236,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56603DE22C2C56800B72A5C /* LaunchScreen.storyboard in Resources */,
+				A566040B22C2E58B00B72A5C /* tipster.png in Resources */,
 				A56603DB22C2C56800B72A5C /* Assets.xcassets in Resources */,
+				A566040D22C2E7BD00B72A5C /* moneysign.jpg in Resources */,
 				A56603D922C2C56700B72A5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +278,7 @@
 				A56603D622C2C56700B72A5C /* ViewController.m in Sources */,
 				A56603E122C2C56800B72A5C /* main.m in Sources */,
 				A56603D322C2C56700B72A5C /* AppDelegate.m in Sources */,
+				A566040522C2D59B00B72A5C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +450,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C45J47S9V6;
 				INFOPLIST_FILE = Tipster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssilverst.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ssilverst.tips--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,12 +467,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C45J47S9V6;
 				INFOPLIST_FILE = Tipster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssilverst.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ssilverst.tips--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
